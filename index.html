@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagram Page</title>
+      <script
+      src="https://kit.fontawesome.com/8a131ae3a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <i class="fa-brands fa-instagram fa-2x"></i>
+      <a class="navbar-brand" href="#">Instagram</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse d-lg-flex justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a New Post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-whatever="Add the caption of your post here">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="recipient-name">Add the caption of your post here</textarea>
+                      </div>
+                      <div class="modal-body">
+                        <button class="rounded-1" style="margin-top: 20px; margin-right: 5px;"> <i class="fa-solid fa-camera"></i></button>
+                        <button class="rounded-1"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Accesibility</a>
+              <a class="dropdown-item" href="#">Privacy and Data</a>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" style="color:red" href="#">Logout</a></li>
+            </div>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content d-flex justify-content-center m-4" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row gx-1 gy-1 justify-content-center m-4" >
+            <div class="col-4">
+                <img class="rounded-1 image"  src="https://www.blackburnromey.com/wp-content/uploads/2022/11/American-Pit-Bull-Terrier.jpg" width="550px" height="500px"  alt="">
+            </div>
+            <div class="col-4">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Rottweiler.jpg" width="550px" height="500px" alt="...">
+            </div>
+            <div class="col-4">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/German-Shepherd.jpg" width="550px" height="500px" alt="...">
+            </div>
+        </div>
+        <div class="row gx-1 gy-1 justify-content-center m-4 ">
+            <div class="col-4 p-1">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Husky.jpg" width="550px" height="500px" alt="...">
+            </div>
+            <div class="col-4 my p-1">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Wolf-Hybrid.jpg" width="550px" height="500px" alt="...">
+            </div>
+            <div class="col-4 my p-1">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Alaskan-Malamute.jpg" width="550px" height="500px" alt="...">
+            </div>
+        </div>
+        <div class="row gx-1 gy-1 justify-content-center m-4">
+            <div class="col-4 my-0 mx-0 p-1">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Doberman-Pinscher.jpg" width="550px" height="500px" alt="...">
+            </div>
+            <div class="col-4 my-0 mx-0 p-1">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Chow-Chow.jpg" width="550px" height="500px" alt="...">
+            </div>
+            <div class="col-4 my-0 mx-0 p-1">
+                <img class="rounded-1 image" src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Great-Dane.jpg" width="550px" height="500px" alt="...">
+            </div>
+        </div>
+  </div>
+  <div class="tab-pane fade mt-4 mb-4" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <div class="card mt-4 mb-4" style="width: 50rem;">
+        <div class="cardHeader p-2 ">
+          <h4>American Bull Terrier </h4> <p class="text-end">1/9</p>
+        </div>
+        <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/American-Pit-Bull-Terrier.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>1000 Likes</h6>
+          <p class="card-text ">The American Pit Bull Terrier is considered one of the most dangerous dog breeds</p>
+        </div>
+    </div>
+    <div class="card mt-4 mb-5" style="width: 50rem;">
+        <div class="cardHeader p-2">
+          <h4>Rottweiler</h4> <p class="text-end">2/9</p>
+        </div>
+        <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Rottweiler.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>1,2k Likes</h6>
+          <p class="card-text">Rottweilers are large, powerful dogs with a strong bite that can easily cause serious injury or death.</p>
+        </div>
+    </div>
+    <div class="card mt-4 mb-5" style="width: 50rem;">
+        <div class="cardHeader p-2">
+          <h4>German Shepherd</h4> <p class="text-end">3/9</p>
+        </div>
+        <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/German-Shepherd.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>1,5k Likes</h6>
+          <p class="card-text">German Shepherds are one of the most popular dog breeds in the world, and they’re also one of the most dangerous. </p>
+        </div>
+    </div>
+    <div class="card mt-4 mb-5" style="width: 50rem;">
+        <div class="cardHeader p-2">
+          <h4>Husky</h4> <p class="text-end">4/9</p>
+        </div>
+        <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Husky.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>900 Likes</h6>
+          <p class="card-text">A Husky is both intelligent and difficult to train. Therefore, owners should obedience train their dog when it is still young. </p>
+        </div>
+    </div>
+    <div class="card mt-4 mb-5" style="width: 50rem;">
+        <div class="cardHeader p-2">
+          <h4>Wolf Hybrid</h4> <p class="text-end">5/9</p>
+        </div>
+        <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Wolf-Hybrid.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>859 Likes</h6>
+          <p class="card-text">Most people think of wolves as dangerous, ferocious animals. But did you know that there are actually wolf hybrids? A wolf hybrid is a cross between a domestic dog and a wild wolf. While they may look like cute, cuddly dogs, they can also be dangerous.</p>
+        </div>
+    </div>
+    <div class="card mt-4 mb-5" style="width: 50rem;">
+      <div class="cardHeader p-2">
+        <h4>Alaskan Malamute</h4> <p class="text-end">6/9</p>
+      </div>
+      <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Alaskan-Malamute.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h6>3k Likes</h6>
+        <p class="card-text">The Alaskan Malamute is a large breed of dog that was originally bred for hunting and working in the Arctic.</p>
+      </div>
+      </div>
+      <div class="card mt-4 mb-5" style="width: 50rem;">
+        <div class="cardHeader p-2">
+          <h4>Doberman Pinscher</h4> <p class="text-end">7/9</p>
+        </div>
+        <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Doberman-Pinscher.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6>4k Likes</h6>
+          <p class="card-text">The Doberman Pinscher indeed can be a fearful dog to own or come across unexpectedly. </p>
+        </div>
+        </div>
+        <div class="card mt-4 mb-5" style="width: 50rem;">
+          <div class="cardHeader p-2">
+            <h4>Chow Chow</h4> <p class="text-end">8/9</p>
+          </div>
+          <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Chow-Chow.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6>4k Likes</h6>
+            <p class="card-text">While the Chow Chow resembles a cuddly and big teddy bear, it also is an attack dog known for killing adults and children.</p>
+          </div>
+        </div>
+          <div class="card mt-4 mb-5" style="width: 50rem;">
+            <div class="cardHeader p-2">
+              <h4>Great Dane</h4> <p class="text-end">9/9</p>
+            </div>
+            <img src="https://www.blackburnromey.com/wp-content/uploads/2022/11/Great-Dane.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>6k Likes</h6>
+            <p class="card-text">The colossal size of the Great Dane makes it dangerous if it is scared or threatened. Otherwise, the dog is considered a large and gentle canine friend. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
